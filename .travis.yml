@@ -11,11 +11,7 @@ env:
 matrix:
   include:
     - php: 5.3
-      env: DB=PGSQL CORE_RELEASE=3.1
-    - php: 5.3
       env: DB=MYSQL CORE_RELEASE=3.1 SUBSITES=1
-    - php: 5.3
-      env: DB=MYSQL CORE_RELEASE=3.1 QUEUEDJOBS=1 
 
 before_script:
  - composer self-update
